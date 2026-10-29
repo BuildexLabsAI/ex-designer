@@ -41,8 +41,9 @@ Studio and Beta Labs, in `tests/fixtures/`. No real site or client is in them.
 ### 1. The audit
 
 You write `/ex-designer example.com`. The skill reads the site as a visitor sees it and audits it with two skills:
-`eskon-brand-audit` for the brand and `material-3` for Material 3 and WCAG faults. It also makes a list of the systems
-that the site uses: hosting, DNS, the domain registrar, mail, forms, third-party scripts and font licenses.
+[`objective-brand-audit`](https://github.com/BuildexLabsAI/objective-brand-audit) for the brand and `material-3` for Material 3 and
+WCAG faults. It also makes a list of the systems that the site uses: hosting, DNS, the domain registrar, mail, forms,
+third-party scripts and font licenses.
 
 The audit report shows a full-page screenshot of each page that has a finding on it. Each finding has a number on
 the element that it is about. The list opens on the findings to fix first.
@@ -224,8 +225,8 @@ flowchart TD
     K -- every change --> L[Handover: a newcomer can maintain the site]
 ```
 
-- **Audit:** reads the site as a visitor, with `eskon-brand-audit` and a separate Material 3 and WCAG check from the
-  `material-3` skill. Only real faults, such as low contrast, become findings.
+- **Audit:** reads the site as a visitor, with `objective-brand-audit` and a separate Material 3 and WCAG check from
+  the `material-3` skill. Only real faults, such as low contrast, become findings.
 - **Stack map:** lists hosting, DNS, the registrar, mail, forms, third-party scripts and font licenses. It also lists
   the files and values that a rebuild needs but Git does not hold.
 - **Ownership gate:** asks if the site is yours, and asks for proof by control.
@@ -255,8 +256,10 @@ flowchart TD
 
 - Google Chrome in `/Applications`. The scripts use it for screenshots and for the brand book PDF.
 - Python packages: `playwright`, `Pillow`, `numpy`, `markdown` and `pypdf`.
-- The skills `eskon-brand-audit` and `material-3` for the audit, and the `copywriting` skill for the text that people
-  read.
+- The skills [`objective-brand-audit`](https://github.com/BuildexLabsAI/objective-brand-audit) and `material-3` for the audit, and
+  the `copywriting` skill for the text that people read.
+- `objective-brand-audit` writes reports only in English. If you select the full report in the audit step, the report
+  is in English.
 - `gh` for sites on GitHub, `npx wrangler` for sites on Cloudflare, and `gitleaks` for the secrets scan.
 
 ## Run it locally

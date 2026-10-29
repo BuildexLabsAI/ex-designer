@@ -23,7 +23,9 @@ scripts read pages in memory and no file of the site (HTML, CSS, scripts, images
 temporary folder; the only pictures are the audit's own screenshots in its findings.
 
 - **Brand audit:** phases 1–4 of the user's brand-audit skill (intake, recon, plan with the user's yes, audit) →
-  `data/findings.md`. Phases for copy and the PDF run only when the full report was chosen.
+  `data/findings.md`. The public skill for this step is `objective-brand-audit`
+  (https://github.com/BuildexLabsAI/objective-brand-audit). Any skill with the same phases 1–4 also works. Phases for
+  copy and the PDF run only when the full report was chosen.
 - **Audit report:** turn the verified findings into `data/findings.json` (format in `scripts/report.py --help`): for
   each finding its severity (high, medium, low), a rank for the five to fix first, and its places as CSS selectors on
   the live pages (none for DNS, analytics, search results). Its texts (title, where, fix) go through the copy route

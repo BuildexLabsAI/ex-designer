@@ -3,6 +3,9 @@
 Approved by Esko on 27.10.2026. Every build stage continues this plan without a new approval; a change of scope goes
 back to Esko.
 
+Since 29.10.2026 this plan names `objective-brand-audit`, the public copy of the private brand-audit skill that the
+build used. Both have the same phases 1–4 and write `data/findings.md`.
+
 **Goal behind this:** anyone Esko hands a site to can own its design and upkeep after one guided run, without the
 original builder, and without breaking what already works (mail, search rankings, forms, leads).
 
@@ -10,7 +13,7 @@ original builder, and without breaking what already works (mail, search rankings
 
 Esko wants to take over existing websites and keep developing them in their current design. No skill did this:
 
-- **eskon-brand-audit** audits a site, but has no Material 3 / WCAG step, no access step and no upkeep.
+- **objective-brand-audit** audits a site, but has no Material 3 / WCAG step, no access step and no upkeep.
 - **redesign-existing-projects** and **taste-redesign** overwrite fonts and colours with their own taste values.
 - **An earlier redesign project** was a takeover that replaced the identity; it never proved ownership or wrote a rollback.
 
@@ -46,7 +49,7 @@ Merging M3 into the brand audit would create a clash. The brand audit already ju
 redesign-existing-projects' taste values; M3 brings its own scales. Two rulebooks give opposite "fixes", and the model
 picks between them at random. So:
 
-- **M3 stays a separate step** in The Ex-Designer. eskon-brand-audit is not changed.
+- **M3 stays a separate step** in The Ex-Designer. objective-brand-audit is not changed.
 - **Only M3's "Broken" list becomes findings:** contrast, target size, focus, hover, overflow, reduced motion, axe
   WCAG faults. These are faults on any brand, so they cannot clash with the site's style.
 - **"Differs from M3" is never an instruction.** It only feeds the completeness list ("a full system has an error
@@ -76,7 +79,8 @@ Chat in Finnish, one question per message, answers as one digit, each approval r
 PDF report).
 
 **1 · Public audit** — Gmail/Drive/Calendar/Slack off, no Claude in Chrome.
-- **eskon-brand-audit phases 1–4** → `data/findings.md`. Phases 5–8 (GPT copy, PDF) only if the full report was chosen.
+- **objective-brand-audit phases 1–4** → `data/findings.md`. Phases 5–8 (GPT copy, PDF) only if the full report was
+  chosen.
 - **M3 check:** `material-3/scripts/audit_web.py` on each host, after an HTTP status check → "Broken" into the findings.
 - **Stack map:** a fixed checklist (`curl`, `dig`, `whois`, generator, scripts, forms, a network log of every
   third-party host) → `stack.md`, plus a row in the platform table: full support, or audit + access list only.
@@ -179,16 +183,16 @@ how it speaks. It documents the brand that exists and invents nothing. Built on 
 - **material-3** `scripts/audit_web.py`: check the HTTP status (today it audits a block page silently, and Cloudflare
   can block headless browsers) + a test. Its `tests/run_all.py` must pass. Public repo: pushing needs Esko's separate
   yes.
-- **eskon-brand-audit:** no change.
+- **objective-brand-audit:** no change.
 
 ## Reuse — do not rebuild
 
 | Need | Existing piece |
 |---|---|
-| Audit and findings | `~/Claude general/Skills/eskon-brand-audit` phases 1–4 |
+| Audit and findings | [`objective-brand-audit`](https://github.com/BuildexLabsAI/objective-brand-audit) phases 1–4 |
 | M3 + WCAG + axe, animation freeze | `~/Claude general/Skills/material-3/scripts/audit_web.py` |
 | Contrast maths | `material-3/scripts/lib/color.mjs` `contrastRatio()`; `scripts/lib/pixels.py` |
-| Speed baseline | `eskon-brand-audit/kit/perf.py --audit <dir>` |
+| Speed baseline | `objective-brand-audit/kit/perf.py --audit <dir>` |
 | Design guards, tests, live title check | the pilot site's repository (`npm run lint`, `npm test`, `handoff.md`) |
 | Blind eval judge | `~/Claude general/Skills/material-3-workspace/private/evals/judge.py` |
 | Brand book chapters and process | `docs/research/brand-book-practice.md` and the approved proposal (replaces the `brand-skill` phases) |
