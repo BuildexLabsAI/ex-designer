@@ -1,0 +1,15 @@
+{
+  "brand": "Alpha Studio",
+  "site": "../code-site/tools/site.json",
+  "design": "../../out/brand-design",
+  "contexts": ["base", "dark"],
+  "hosts": ["alpha.invalid"],
+  "kit": "../../out/brand-kit",
+  "lang": "en",
+  "version": "1.0",
+  "files": {"logo-mark.svg": "public/assets/favicon-alpha.svg"},
+  "sample": "voice-lede",
+  "banned": ["cheap"],
+  "people": ["Pat Example"],
+  "audit": "audit.json"
+}

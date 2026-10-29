@@ -1,0 +1,34 @@
+# Secrets: commit .env.example with placeholder values instead
+.env
+.env.*
+!.env.example
+
+# Personal Claude Code files
+CLAUDE.local.md
+handoff.md
+.claude/settings.local.json
+.claude/worktrees/
+
+# Operating system junk
+.DS_Store
+Thumbs.db
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+__pycache__/
+*.pyc
+.venv/
+
+# Test output
+tests/out/
+
+# Eval runs: their answers name the user and their setup; transcripts hold their e-mail address
+tests/eval/runs/
+tests/newcomer/runs/**/transcript.jsonl
+
+# The plain denylist stays on the owner's Mac; the repository ships only its hashes (tests/denylist.py)
+tests/denylist.txt

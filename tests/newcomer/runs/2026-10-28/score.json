@@ -1,0 +1,22 @@
+{
+ "passed": 4,
+ "jobs": {
+  "1": {
+   "ok": true,
+   "detail": "beta accent #7c2d12, alpha accent #1d4ed8; baseline shots moved 0; verify pass; 8 shots changed, 0 outside beta"
+  },
+  "2": {
+   "ok": true,
+   "detail": "font commit 3c76cc3; fonts added outside the token file: 0"
+  },
+  "3": {
+   "ok": true,
+   "detail": "font token now 'Arial, Helvetica, sans-serif' (before 'Arial, Helvetica, sans-serif'); font commit in history: True; Georgia left in no file"
+  },
+  "4": {
+   "ok": true,
+   "detail": "missing: nothing"
+  }
+ },
+ "hints": 0
+}

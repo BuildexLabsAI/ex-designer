@@ -1,0 +1,26 @@
+/* The built stylesheet of the invented site: everything through the tokens, as a Tailwind build would emit it. */
+@font-face { font-family: "Fixture Icons"; src: url("/assets/icons.woff2") format("woff2"); }
+* { box-sizing: border-box; }
+html { font-family: Arial, Helvetica, sans-serif; background: var(--background); color: var(--foreground); }
+body { margin: 0; font-size: 16px; line-height: 1.5; }
+a { color: var(--accent); }
+.bar { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.bar nav a { margin-left: 16px; }
+.brand { font-weight: 700; color: var(--foreground); text-decoration: none; }
+main { max-width: 960px; margin: 0 auto; padding: 24px; }
+.hero { padding: 32px 0; position: relative; }
+.display { font-size: 2.5rem; line-height: 1.2; margin: 0 0 12px; }
+.title { font-size: 2rem; margin: 0 0 12px; }
+.lede { font-size: 1.125rem; color: var(--muted-foreground); }
+.button { display: inline-block; padding: 12px 20px; border-radius: var(--radius); background: var(--accent); color: var(--accent-foreground); text-decoration: none; box-shadow: 0 0 0 4px var(--accent-soft); }
+.pulse { position: absolute; right: 0; top: 40px; width: 24px; height: 24px; border-radius: 50%; background: var(--teal); animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.6); opacity: 1; } }
+.cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 24px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: calc(var(--radius) * 0.5); padding: 16px; }
+.card h2 { font-size: 1.125rem; margin: 0 0 8px; }
+.teal { color: var(--teal); }
+.error { color: var(--destructive); }
+.muted { color: var(--muted-foreground); }
+.stripe { display: block; max-width: 100%; height: 16px; }
+.foot { border-top: 1px solid var(--border); padding: 16px 24px; }
+.wide-table { width: 640px; padding: 16px; border: 1px solid var(--border); background: var(--surface); }

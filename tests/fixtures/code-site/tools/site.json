@@ -1,0 +1,21 @@
+{
+  "root": "..",
+  "tokens": {
+    "file": "app/globals.css",
+    "sources": ["app/**/*.css", "components/**/*.tsx", "lib/**/*.ts"],
+    "docs": ["docs/**/*.md"],
+    "fonts": ["app/fonts/**"]
+  },
+  "oneoffs": {"#e8e6df": "text selection highlight"},
+  "serve": {"url": "http://127.0.0.1:8787"},
+  "hosts": [
+    {"name": "alpha.invalid", "brand": "Alpha Studio", "expect": ["Alpha Studio"], "absent": ["Beta Labs"]},
+    {"name": "beta.invalid", "brand": "Beta Labs", "expect": ["Beta Labs"], "absent": ["Alpha Studio"]}
+  ],
+  "pages": ["/", "/about/", "/wide/"],
+  "sitemap": "/sitemap.xml",
+  "sizes": ["390x844", "1280x800"],
+  "modes": ["light", "dark"],
+  "dark": {"class": "dark", "storage": {"theme": "dark"}},
+  "mask": []
+}

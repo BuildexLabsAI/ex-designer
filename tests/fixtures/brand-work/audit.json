@@ -1,0 +1,8 @@
+{
+  "site": "alpha.invalid",
+  "findings": [
+    {"id": "F1", "severity": "low", "area": "ux", "places": [{"page": "home", "selector": "h1"}],
+     "text": {"en": {"title": "The home page opens on one headline, one line and one button"}}}
+  ],
+  "dropped": []
+}

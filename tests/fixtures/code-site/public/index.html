@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-brand="{{brand}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{title}} makes calm software.">
+<link data-href="https://{{host}}/old-home/" rel="canonical" href="https://{{host}}/">
+<link rel="alternate" hreflang="en" href="https://{{host}}/">
+<link rel="alternate" hreflang="fi" href="https://{{host}}/fi/">
+<link rel="icon" href="/assets/favicon-{{brand}}.svg">
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="https://fonts.invalid/css2?family=Fixture+Grotesk">
+<script>if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");</script>
+<script async src="https://tracker.invalid/t.js"></script>
+<script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+<header class="bar"><a class="brand" href="/">{{title}}</a><nav><a href="/about/">About</a> <a href="/wide/">Wide</a></nav></header>
+<main>
+  <section class="hero">
+    <h1 class="display">{{title}}</h1>
+    <p class="lede">We make calm software.</p>
+    <a class="button" href="/about/">Start</a>
+    <span class="pulse" aria-hidden="true"></span>
+  </section>
+  <section class="cards">
+    <article class="card"><h2>Teal note</h2><p class="teal">Built to last.</p></article>
+    <article class="card"><h2>Errors</h2><p class="error">Something failed.</p></article>
+    <article class="card"><h2>Today</h2><p class="muted">Rendered <time id="now"></time>, number <span id="rnd"></span></p></article>
+  </section>
+  <img src="https://cdn.invalid/pixel.gif" width="1" height="1" alt="">
+  <img src="/assets/away.png" width="1" height="1" alt="">
+  <img class="stripe" src="/assets/stripe-0f766e.svg" srcset="/assets/stripe-0f766e.svg 1x, /assets/stripe-wide.svg 2x" width="320" height="16" alt="">
+</main>
+<footer class="foot"><p class="muted">&copy; 2026 {{title}}</p></footer>
+<script>
+document.getElementById("now").textContent = new Date().toISOString().slice(0, 16).replace("T", " ");
+document.getElementById("rnd").textContent = Math.floor(Math.random() * 1e6);
+fetch("https://api.invalid/beacon", { method: "POST", body: "x" }).catch(() => {});
+</script>
+</body>
+</html>

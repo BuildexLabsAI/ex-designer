@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-brand="{{brand}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · {{title}}</title>
+<meta name="description" content="Who {{title}} is.">
+<link rel="canonical" href="https://{{host}}/about/">
+<link rel="icon" href="/assets/favicon-{{brand}}.svg">
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/site.css">
+<script>if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");</script>
+</head>
+<body>
+<header class="bar"><a class="brand" href="/">{{title}}</a><nav><a href="/about/">About</a> <a href="/wide/">Wide</a></nav></header>
+<main>
+  <h1 class="title">About {{title}}</h1>
+  <p class="lede">A small team that keeps things running.</p>
+  <article class="card"><h2>Contact</h2><p class="muted">Write to us through the form.</p><a class="button" href="/">Home</a></article>
+</main>
+<footer class="foot"><p class="muted">&copy; 2026 {{title}}</p></footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Runs the BuildexLabsAI repository standard check. The check itself lives in BuildexLabsAI/.github.
+name: standard
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  standard:
+    uses: BuildexLabsAI/.github/.github/workflows/standard-check.yml@main

@@ -1,0 +1,9 @@
+{
+ "model": "opus",
+ "seconds": 304.4,
+ "exit": 0,
+ "turns": 17,
+ "cost_usd": 0.4914298,
+ "permission_denials": 1,
+ "stderr_tail": ""
+}

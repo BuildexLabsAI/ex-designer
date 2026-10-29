@@ -1,0 +1,16 @@
+{
+  "brand": "Example",
+  "site": "../tools/site.json",
+  "design": "../design",
+  "contexts": ["base", "dark"],
+  "kit": "../brand",
+  "lang": "en",
+  "version": "1.0",
+  "files": {"logo.svg": "public/logo.svg", "logo-white.svg": "public/logo-white.svg", "favicon.svg": "public/favicon.svg"},
+  "examples": {"home-desktop.png": "example.com/light/1440x900/index.png"},
+  "sample": "voice-headline",
+  "banned": [],
+  "people": [],
+  "audit": "../data/findings.json",
+  "shots": "../baseline/shots"
+}

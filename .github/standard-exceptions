@@ -1,0 +1,5 @@
+# Paths allowed to break the BuildexLabsAI repository standard: one per line, each with its
+# reason after a #. Glob patterns work, and * also matches across folders. For example:
+#
+#   docs/contract.pdf  # signed contract, required for the audit
+#   prisma  # Prisma reads its schema from a folder at the root

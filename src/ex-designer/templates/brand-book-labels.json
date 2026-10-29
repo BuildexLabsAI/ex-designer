@@ -1,0 +1,10 @@
+{
+ "en": {
+  "version": "Version {version}",
+  "open": "Awaiting owner's answer"
+ },
+ "fi": {
+  "version": "Versio {version}",
+  "open": "Odottaa vastausta"
+ }
+}

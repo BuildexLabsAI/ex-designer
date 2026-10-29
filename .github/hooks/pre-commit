@@ -1,0 +1,4 @@
+#!/bin/sh
+# BuildexLabsAI standard: checks the files you are about to commit.
+# Switch it on once per clone:  git config core.hooksPath .github/hooks
+exec bash "$(git rev-parse --show-toplevel)/.github/scripts/check-standard.sh" --staged
