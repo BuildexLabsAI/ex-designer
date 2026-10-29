@@ -9,8 +9,6 @@ Awkward.
 You fire the designer. They walk away with the Figma files, brand guidelines, design tokens, and every last bit of
 documentation.
 
-Your spouse? Well, that's a different problem.
-
 Now you're left with a website, a logo, and absolutely no idea how any of it was built.
 
 **Meet The Ex-Designer, the skill that picks up where your designer left off.**
