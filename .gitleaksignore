@@ -1,0 +1,5 @@
+# Planted fake key in the invented test site: tests/run_all.py checks that no skill output ever repeats it.
+ee1342f84ff714ea6ef8d0ebbf38f66807beaf2a:tests/fixtures/code-site/lib/keys.ts:generic-api-key:2
+ee1342f84ff714ea6ef8d0ebbf38f66807beaf2a:tests/run_all.py:generic-api-key:72
+tests/fixtures/code-site/lib/keys.ts:generic-api-key:2
+tests/run_all.py:generic-api-key:72
